@@ -21,7 +21,7 @@ export default function Register() {
   function handleRegister(e) {
     e.preventDefault();
     axios
-      .post("http://localhost:5000/api/auth/signup", formData)
+      .post("https://foodapp-mern-yg2z.onrender.com//api/auth/signup", formData)
       .then((res) => {
         console.log("Registration successful", res);
         if (res.status === 201) {

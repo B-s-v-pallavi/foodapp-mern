@@ -14,7 +14,7 @@ const RestaurantDetails = () => {
   // Fetch restaurant details when component mounts
   useEffect(() => {
      axios
-      .get(`http://localhost:5000/api/restaurant/${id}`)
+      .get(`https://foodapp-mern-yg2z.onrender.com//api/restaurant/${id}`)
       .then((res) => {
         setRestaurant(res.data);
         setLoading(false);
@@ -29,7 +29,7 @@ const RestaurantDetails = () => {
   const handleTake = async(foodItemName) => {
     const token = localStorage.getItem("token");
     await axios
-      .delete(`http://localhost:5000/api/restaurant/${id}/fooditems/${foodItemName}`, {
+      .delete(`https://foodapp-mern-yg2z.onrender.com//api/restaurant/${id}/fooditems/${foodItemName}`, {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then(() => {

@@ -13,7 +13,7 @@ const AdminDashboard = () => {
   // Fetch restaurants from the backend
   const fetchRestaurants = () => {
     axios
-      .get("http://localhost:5000/api/restaurant")
+      .get("https://foodapp-mern-yg2z.onrender.com//api/restaurant")
       .then((res) => {
         setRestaurants(res.data);
         setLoading(false);
@@ -32,7 +32,7 @@ const AdminDashboard = () => {
   const handleDelete = (id) => {
     const token = localStorage.getItem("token");
     axios
-      .delete(`http://localhost:5000/api/restaurant/${id}`, {
+      .delete(`https://foodapp-mern-yg2z.onrender.com//api/restaurant/${id}`, {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then(() => {

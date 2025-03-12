@@ -15,7 +15,7 @@ const Home = () => {
   useEffect(() => {
     if (showRestaurants) {
       axios
-        .get("http://localhost:5000/api/restaurant")
+        .get("https://foodapp-mern-yg2z.onrender.com//api/restaurant")
         .then((res) => setRestaurants(res.data))
         .catch((err) =>
           console.error(
