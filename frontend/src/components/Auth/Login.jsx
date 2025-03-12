@@ -16,7 +16,7 @@ export default function Login() {
   function handleLogin(e) {
     e.preventDefault();
     axios
-      .post("https://foodapp-mern-yg2z.onrender.com//api/auth/login", formData)
+      .post("https://foodapp-mern-yg2z.onrender.com/api/auth/login", formData)
       .then((res) => {
         console.log(res);
         if (res.status === 200) {

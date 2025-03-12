@@ -57,7 +57,7 @@ const AddRestaurant = () => {
     const restaurantData = { ...restaurant, availableFoodItems: foodItems };
 
      axios
-      .post("https://foodapp-mern-yg2z.onrender.com//api/restaurant", restaurantData, {
+      .post("https://foodapp-mern-yg2z.onrender.com/api/restaurant", restaurantData, {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((res) => {
