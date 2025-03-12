@@ -1,0 +1,115 @@
+/* Home.css */
+
+/* Overall Home Container */
+.home-container {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  /* Background image */
+  background: url('https://thumbs.dreamstime.com/z/different-food-text-donate-wooden-background-top-view-donation-concept-184381799.jpg')
+    no-repeat center center/cover;
+  padding: 2rem;
+}
+
+/* Overlay for the Welcome Message */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  color: #fff;
+}
+
+.overlay h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Explore Button */
+.explore-btn {
+  background-color: #28a745;
+  border: none;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.25rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.explore-btn:hover {
+  background-color: #218838;
+}
+
+/* Restaurants Section */
+.restaurants-section {
+  background-color: #f8f9fa;
+  padding: 2rem;
+  margin-top: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.restaurants-section h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: #333;
+}
+
+/* Restaurant Cards Grid */
+.restaurant-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 0 1rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .overlay h1 {
+    font-size: 2rem;
+  }
+  .explore-btn {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+  .restaurants-section {
+    padding: 1.5rem;
+  }
+  .restaurants-section h2 {
+    font-size: 1.75rem;
+  }
+  .restaurant-cards {
+    gap: 1rem;
+    padding: 0 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .overlay h1 {
+    font-size: 1.5rem;
+  }
+  .explore-btn {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+  .restaurants-section {
+    padding: 1rem;
+  }
+  .restaurants-section h2 {
+    font-size: 1.5rem;
+  }
+  .restaurant-cards {
+    gap: 0.75rem;
+    padding: 0 0.5rem;
+  }
+}

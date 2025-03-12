@@ -1,0 +1,117 @@
+/* RestaurantDetails.css */
+
+.restaurant-details-card {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #8fe9a2;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+  }
+  
+  .head {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color:white;
+  }
+  
+  .restaurant-details-card p {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+    color: #fcf8f8;
+    line-height: 1.5;
+  }
+  
+  /* Table styling for available food items */
+  .food-items-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+  }
+  
+  .food-items-table th,
+  .food-items-table td {
+    border: 1px solid #ddd;
+    padding: 0.75rem;
+    text-align: left;
+  }
+  
+  .food-items-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  .food-items-table tr:hover {
+    background-color: #f9f9f9;
+  }
+  
+  /* Button styling for actions */
+  .restaurant-details-card button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.25rem;
+    margin-top: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .ht{
+    color: rgb(243, 12, 12);
+  }
+  .restaurant-details-card button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Specific styling for the back button */
+  .back-btn {
+    background-color: #6c757d;
+    margin-top: 2rem;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .restaurant-details-card {
+      padding: 1.5rem;
+      margin: 1rem;
+    }
+    .head {
+      font-size: 1.75rem;
+    }
+    .restaurant-details-card p {
+      font-size: 0.95rem;
+    }
+    .food-items-table th,
+    .food-items-table td {
+      padding: 0.5rem;
+    }
+    .restaurant-details-card button {
+      padding: 0.65rem 1rem;
+      font-size: 0.95rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .restaurant-details-card {
+      padding: 1rem;
+      margin: 0.75rem;
+    }
+    .head {
+      font-size: 1.5rem;
+    }
+    .restaurant-details-card p {
+      font-size: 0.9rem;
+    }
+    .food-items-table th,
+    .food-items-table td {
+      padding: 0.4rem;
+    }
+    .restaurant-details-card button {
+      padding: 0.55rem 0.8rem;
+      font-size: 0.85rem;
+    }
+  }
+  
